@@ -26,18 +26,28 @@
                                         <integer key="value" value="50"/>
                                     </userDefinedRuntimeAttribute>
                                     <userDefinedRuntimeAttribute type="color" keyPath="circleFillColor">
-                                        <color key="value" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                        <color key="value" red="0.1843137255" green="0.63529411759999999" blue="0.66274509800000003" alpha="1" colorSpace="calibratedRGB"/>
                                     </userDefinedRuntimeAttribute>
                                     <userDefinedRuntimeAttribute type="number" keyPath="circleBorderWidth">
                                         <integer key="value" value="5"/>
                                     </userDefinedRuntimeAttribute>
                                     <userDefinedRuntimeAttribute type="number" keyPath="circleRadious">
-                                        <integer key="value" value="100"/>
+                                        <integer key="value" value="99"/>
                                     </userDefinedRuntimeAttribute>
-                                    <userDefinedRuntimeAttribute type="boolean" keyPath="showImage" value="NO"/>
                                     <userDefinedRuntimeAttribute type="image" keyPath="avatar" value="ProfileAvatar3"/>
+                                    <userDefinedRuntimeAttribute type="boolean" keyPath="showImage" value="NO"/>
                                 </userDefinedRuntimeAttributes>
                             </view>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="2XG-Xg-KoR" customClass="MyCustomTextField">
+                                <rect key="frame" x="151" y="492" width="300" height="30"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="color" keyPath="borderColor">
+                                        <color key="value" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                            </textField>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                         <constraints>
@@ -45,6 +55,9 @@
                             <constraint firstAttribute="centerY" secondItem="T74-3b-b4u" secondAttribute="centerY" id="2Pd-LX-oHS"/>
                             <constraint firstItem="T74-3b-b4u" firstAttribute="width" secondItem="kh9-bI-dsS" secondAttribute="width" multiplier="0.5" id="4EZ-fW-Zvu"/>
                             <constraint firstItem="T74-3b-b4u" firstAttribute="height" secondItem="kh9-bI-dsS" secondAttribute="height" multiplier="0.5" id="768-HU-4Pm"/>
+                            <constraint firstAttribute="centerX" secondItem="2XG-Xg-KoR" secondAttribute="centerX" constant="-0.5" id="8rg-zZ-30D"/>
+                            <constraint firstItem="2XG-Xg-KoR" firstAttribute="width" secondItem="T74-3b-b4u" secondAttribute="width" id="faK-4k-Qui"/>
+                            <constraint firstItem="2XG-Xg-KoR" firstAttribute="top" secondItem="T74-3b-b4u" secondAttribute="bottom" constant="42" id="sPv-6z-pAn"/>
                         </constraints>
                     </view>
                 </viewController>
@@ -54,7 +67,7 @@
         <!--View Controller-->
         <scene sceneID="T1b-kQ-LRj">
             <objects>
-                <viewController id="S8u-wm-Ipu" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="Test" id="S8u-wm-Ipu" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="3jY-ac-VTZ"/>
                         <viewControllerLayoutGuide type="bottom" id="dXv-vj-Rzu"/>
@@ -63,26 +76,45 @@
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Bky-2E-GEc">
-                                <rect key="frame" x="268" y="136" width="150" height="24"/>
-                                <inset key="titleEdgeInsets" minX="-60" minY="0.0" maxX="0.0" maxY="0.0"/>
-                                <inset key="imageEdgeInsets" minX="125" minY="3" maxX="0.0" maxY="3"/>
-                                <state key="normal" title="I am a button" image="dropdown_arrow" backgroundImage="blue_rectround_button">
-                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
-                                </state>
-                            </button>
+                            <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="6CL-Zi-ocf" customClass="MyCustomView">
+                                <rect key="frame" x="200" y="95" width="200" height="200"/>
+                                <color key="backgroundColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="string" keyPath="title" value="My big blue box"/>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="borderRadious">
+                                        <integer key="value" value="50"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="circleRadious">
+                                        <integer key="value" value="100"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="color" keyPath="circleFillColor">
+                                        <color key="value" red="1" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="circleBorderWidth">
+                                        <integer key="value" value="15"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                            </view>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="sUt-a6-yqb" customClass="MyCustomTextField">
+                                <rect key="frame" x="237" y="336" width="127" height="30"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="color" keyPath="borderColor">
+                                        <color key="value" red="1" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                            </textField>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     </view>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="T6b-aH-Lg1" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
+            <point key="canvasLocation" x="760" y="136"/>
         </scene>
     </scenes>
     <resources>
         <image name="ProfileAvatar3" width="70" height="70"/>
-        <image name="blue_rectround_button" width="91" height="24"/>
-        <image name="dropdown_arrow" width="43" height="21"/>
     </resources>
 </document>

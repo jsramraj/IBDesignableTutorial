@@ -18,12 +18,12 @@
 //
 //}
 
--(void)prepareForInterfaceBuilder {
-    _circleRadious = 60;
-    _circleFillColor = [UIColor whiteColor];
-    _circleBorderWidth = 2.0;
-    _title = @"Sample";
-}
+//-(void)prepareForInterfaceBuilder {
+//    _circleRadious = 60;
+//    _circleFillColor = [UIColor whiteColor];
+//    _circleBorderWidth = 2.0;
+//    _title = @"Sample";
+//}
 
 
 // Only override drawRect: if you perform custom drawing.

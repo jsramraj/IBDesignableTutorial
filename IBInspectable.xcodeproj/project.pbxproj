@@ -16,6 +16,7 @@
 		27AACD0F1A8A4A7900FBE4C7 /* IBInspectableTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 27AACD0E1A8A4A7900FBE4C7 /* IBInspectableTests.m */; };
 		27AACD1A1A8A4AC300FBE4C7 /* MyCustomView.m in Sources */ = {isa = PBXBuildFile; fileRef = 27AACD191A8A4AC300FBE4C7 /* MyCustomView.m */; };
 		27AACD1C1A8A4DF600FBE4C7 /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 27AACD1B1A8A4DF600FBE4C7 /* QuartzCore.framework */; };
+		27D77F0E1A9221570091371D /* MyCustomTextField.m in Sources */ = {isa = PBXBuildFile; fileRef = 27D77F0D1A9221570091371D /* MyCustomTextField.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -50,6 +51,8 @@
 		27AACD181A8A4AC300FBE4C7 /* MyCustomView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MyCustomView.h; sourceTree = "<group>"; };
 		27AACD191A8A4AC300FBE4C7 /* MyCustomView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MyCustomView.m; sourceTree = "<group>"; };
 		27AACD1B1A8A4DF600FBE4C7 /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = System/Library/Frameworks/QuartzCore.framework; sourceTree = SDKROOT; };
+		27D77F0C1A9221570091371D /* MyCustomTextField.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MyCustomTextField.h; sourceTree = "<group>"; };
+		27D77F0D1A9221570091371D /* MyCustomTextField.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MyCustomTextField.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -112,6 +115,8 @@
 				27AACCFA1A8A4A7900FBE4C7 /* ViewController.m */,
 				27AACD181A8A4AC300FBE4C7 /* MyCustomView.h */,
 				27AACD191A8A4AC300FBE4C7 /* MyCustomView.m */,
+				27D77F0C1A9221570091371D /* MyCustomTextField.h */,
+				27D77F0D1A9221570091371D /* MyCustomTextField.m */,
 				27AACCFC1A8A4A7900FBE4C7 /* Main.storyboard */,
 				27AACCFF1A8A4A7900FBE4C7 /* Images.xcassets */,
 				27AACD011A8A4A7900FBE4C7 /* LaunchScreen.xib */,
@@ -248,6 +253,7 @@
 			files = (
 				27AACCFB1A8A4A7900FBE4C7 /* ViewController.m in Sources */,
 				27AACD1A1A8A4AC300FBE4C7 /* MyCustomView.m in Sources */,
+				27D77F0E1A9221570091371D /* MyCustomTextField.m in Sources */,
 				27AACCF81A8A4A7900FBE4C7 /* AppDelegate.m in Sources */,
 				27AACCF51A8A4A7900FBE4C7 /* main.m in Sources */,
 			);
