@@ -14,8 +14,6 @@ IB_DESIGNABLE
     
 }
 
-@property (strong, nonatomic) NSURLConnection *connection;
-
 @property (nonatomic) IBInspectable NSString *title;
 @property (nonatomic) IBInspectable NSInteger borderRadious;
 
@@ -26,6 +24,25 @@ IB_DESIGNABLE
 @property (nonatomic) IBInspectable CGRect circleFrame;
 @property (nonatomic) IBInspectable UIImage *avatar;
 @property (nonatomic) IBInspectable BOOL showImage;
+
+
+@end
+
+
+IB_DESIGNABLE @interface DesignableView : UIView
+{
+    
+}
+
+@property (nonatomic) IBInspectable BOOL shouldShowImage;
+@property (nonatomic) IBInspectable NSInteger borderRadious;
+@property (nonatomic) IBInspectable NSString *title;
+
+@property (nonatomic) IBInspectable CGPoint center;
+@property (nonatomic) IBInspectable CGSize size;
+@property (nonatomic) IBInspectable CGRect frame;
+@property (nonatomic) IBInspectable NSRange values;
+@property (nonatomic) IBInspectable UIColor *fillColor;
 
 
 @end

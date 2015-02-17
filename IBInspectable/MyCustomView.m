@@ -67,3 +67,10 @@
 }
 
 @end
+
+
+@implementation DesignableView
+
+
+
+@end
